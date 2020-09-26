@@ -1,4 +1,4 @@
-package com.epam.tasks.third.logic.models;
+package com.epam.tasks.third.domain.models;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;

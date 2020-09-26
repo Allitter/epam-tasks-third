@@ -1,7 +1,7 @@
-package com.epam.tasks.third.logic;
+package com.epam.tasks.third.domain;
 
-import com.epam.tasks.third.logic.models.Car;
-import com.epam.tasks.third.logic.models.CarPark;
+import com.epam.tasks.third.domain.models.Car;
+import com.epam.tasks.third.domain.models.CarPark;
 import java.util.List;
 import java.util.Random;
 

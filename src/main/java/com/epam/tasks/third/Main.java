@@ -5,8 +5,8 @@ package com.epam.tasks.third;
 
 import com.epam.tasks.third.data.FileInputService;
 import com.epam.tasks.third.data.InputService;
-import com.epam.tasks.third.logic.CarParkLogic;
-import com.epam.tasks.third.logic.models.CarPark;
+import com.epam.tasks.third.domain.CarParkLogic;
+import com.epam.tasks.third.domain.models.CarPark;
 import com.epam.tasks.third.view.ConsoleResultPrinter;
 import com.epam.tasks.third.view.ResultPrinter;
 import java.io.File;
