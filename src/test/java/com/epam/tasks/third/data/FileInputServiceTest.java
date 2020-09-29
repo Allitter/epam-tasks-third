@@ -12,29 +12,29 @@ public class FileInputServiceTest {
 
     @Test
     public void testReadLine() throws IOException {
+        String expected = "ABT";
+
         String actual;
         try (FileInputService inputService = new FileInputService(file)) {
             actual = inputService.readLine();
         }
-
-        String expected = "ABT";
 
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testReadAllLines() throws IOException {
-        List<String> actual;
-        try (FileInputService inputService = new FileInputService(file)) {
-            actual = inputService.readAllLines();
-        }
-
         String[] expected = {
                 "ABT",
                 "AC Schnitzer",
                 "Acura",
                 "Alfa Romeo"
         };
+
+        List<String> actual;
+        try (FileInputService inputService = new FileInputService(file)) {
+            actual = inputService.readAllLines();
+        }
 
         Assert.assertArrayEquals(expected, actual.toArray());
     }
